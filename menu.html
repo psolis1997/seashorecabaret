@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstraps CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Seashore Cabaret</title>
+</head>
+
+<body
+    style="background-image: url('img/bg1.png'); background-repeat: repeat-y; background-position: center; background-attachment: fixed;">
+    <!-- HEADER -->
+    <div class="header">
+        <a href="menu.html" id="menuBtn"><img src="img/logo-cream.png" alt="Seashore Cabaret Logo" id="menuHeader"></a>
+    </div>
+    <!-- /HEADER/ -->
+
+    <!-- SUBHEADING -->
+    <div class="subheading d-flex justify-content-center">
+        <img src="img/star.svg" alt="Red star">
+        <h2>Menu</h2><img src="img/star.svg" alt="Red star">
+    </div>
+    <!-- /SUBHEADING/ -->
+
+    <!-- MENU -->
+    <nav class="menu-nav justify-content-center">
+        <a class="nav-link" aria-current="true" href="#" id="drinksBtn">Drinks</a>
+        <a class="nav-link" href="#" id="breakfastBtn">Breakfast</a>
+        <a class="nav-link">Lunch</a>
+        <a class="nav-link">Dinner</a>
+    </nav>
+    <!-- /MENU/ -->
+
+    <!-- DRINKS ITEMS -->
+    <div class="drinks" id="showDrinksOnly">
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                All
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#coffee">Coffee & Tea</a></li>
+                <li><a class="dropdown-item" href="#cold">Cold Drinks</a></li>
+                <li><a class="dropdown-item" href="#alcohol">Alcoholic</a></li>
+            </ul>
+        </div>
+        <div class="drinks-list">
+            <h3 id="coffee">Coffee & Tea <span>Kawhe a Tī</span></h3>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center" data-bs-toggle="modal"
+                    data-bs-target="#whiteCoffeeModal">White Coffee <span>$4.70</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Black Coffee
+                    <span>$4</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Mocha <span>$5.50</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Hot Chocolate
+                    <span>$5</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Tea <span>$4.50</span>
+                </li>
+            </ul>
+            <h3 id="cold">Cold Drinks</h3>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">Juice <span>$6.50</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Soda <span>$5.50</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Smoothie
+                    <span>$8.50</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Milkshake <span>$9</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Iced Coffee
+                    <span>$8</span></li>
+            </ul>
+            <h3 id="alcohol">Alcoholic</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Beer</li>
+                <li class="list-group-item">Bubbles</li>
+                <li class="list-group-item">Cocktails</li>
+                <li class="list-group-item">Wine</li>
+            </ul>
+        </div>
+    </div>
+    <!-- /DRINKS ITEMS/ -->
+
+    <!-- DRINKS MODAL -->
+    <div class="modal fade" id="whiteCoffeeModal" tabindex="-1" aria-labelledby="whiteCoffeeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="whiteCoffeeModalLabel">White Coffee</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Choose an option:<span>*</span></p>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
+                        <label class="btn" for="btnradio1">Flat White</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2">
+                        <label class="btn" for="btnradio2">Latte</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3">
+                        <label class="btn" for="btnradio3">Cappuccino</label>
+                    </div>
+                    <p>Milk:<span></span></p>
+                    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck1">
+                        <label class="btn" for="btncheck1">Regular</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck2">
+                        <label class="btn" for="btncheck2">Trim</label>
+                    </div>
+                    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck3">
+                        <label class="btn" for="btncheck3">Oat +50c</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck4">
+                        <label class="btn" for="btncheck4">Soy +50c</label>
+                    </div>
+                    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck5">
+                        <label class="btn" for="btncheck5">Coconut +50c</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck6">
+                        <label class="btn" for="btncheck6">Almond +50c</label>
+                    </div>
+                    <p>Requests:<span></span></p>
+                    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck7">
+                        <label class="btn" for="btncheck7">Sugar</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck8">
+                        <label class="btn" for="btncheck8">Extra Hot</label>
+                    </div>
+                    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck9">
+                        <label class="btn" for="btncheck9">Extra Shot +50c</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck10">
+                        <label class="btn" for="btncheck10">Single Shot</label>
+                    </div>
+                    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck11">
+                        <label class="btn" for="btncheck11">Large +70c</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck12">
+                        <label class="btn" for="btncheck12">Takeaway</label>
+                    </div>
+                    <br>
+                    <input class="form-control" type="text" placeholder="Notes" aria-label="default input example">
+                    <div class="order-footer d-flex justify-content-between align-items-center">
+                        <div class="qty d-flex justify-content-between align-items-center">
+                            <p>Quantity:</p>
+                            <button class="minus">-</button>
+                            <input class="number" type="text" value="1" aria-label="readonly input example" readonly>
+                            <button class="plus">+</button>
+                        </div>
+                        <a class="btn btn-primary" id="drinksOrder" href="pay.html" role="button">Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /DRINKS MODAL/ -->
+
+    <!-- BREAKFAST ITEMS -->
+    <div class="breakfast" id="showBreakfastOnly">
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                All
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#brekkie">Brekkie Meals</a></li>
+                <li><a class="dropdown-item" href="#sides">Sides</a></li>
+                <li><a class="dropdown-item" href="#kids">Kid's Meals</a></li>
+            </ul>
+        </div>
+        <div class="key">
+            <p>V - Vegan | VG - Vegetarian | GF - Gluten Free | DF - Dairy Free | <img src="img/star.svg" alt=""> -
+                Popular</p>
+        </div>
+        <div class="breakfast-list">
+            <h3 id="brekkie">Brekkie Meals</h3>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start" data-bs-toggle="modal"
+                    data-bs-target="#brekkieModal">
+                    <div class="description">
+                        <h5>Free Range Eggs on Toast</h5>
+                        <p>Click me to add sides!
+                            <br>
+                            (GF +$2)
+                        </p>
+                    </div>
+                    <span>$13</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="description">
+                        <h5>Chia Bowl</h5>
+                        <p>Chia pudding, topped with toasted nuts & fresh berries
+                            <br>
+                            (V)
+                        </p>
+                    </div>
+                    <span>$14</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="description">
+                        <h5>Granola<img src="img/star.svg" alt="Red star"></h5>
+                        <p>Homemade cranberry and hazelnut granola with fresh sliced banana served & milk
+                        </p>
+                    </div>
+                    <span>$14</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="description">
+                        <h5>Avocado & Tomato on Five Grain Toast</h5>
+                        <p>Avocado, marinated tomatoes & basil
+                            <br>
+                            Build me up with sides!
+                            <br>
+                            (V)
+                        </p>
+                    </div>
+                    <span>$14</span>
+                </li>
+            </ul>
+            <h3 id="sides">Sides</h3>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">House Smoked Salmon
+                    <span>$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Organic Halloumi
+                    <span>$6</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Bacon
+                    <span>$6</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Kransky <span>$6</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Avocado
+                    <span>$5</span></li>
+            </ul>
+            <h3 id="kids">Kid's Meals</h3>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">Pancake Stack
+                    <span>$9</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Coco Pops & Organic Milk
+                    <span>$6</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Boiled Egg & Soldiers
+                    <span>$6.50</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Free Range Ham & Cheese
+                    Toastie <span>$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Kid's Curly Fries
+                    <span>$5</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- /BREAKFAST ITEMS/ -->
+
+    <!-- BREAKFAST MODAL -->
+    <div class="modal fade" id="brekkieModal" tabindex="-1" aria-labelledby="brekkieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="brekkieModalLabel">Free Range Eggs on Toast</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img src="img/eggs.jpg" class="eggs" alt="Plate of eggs on toast with bacon and hash browns">
+                <div class="modal-body">
+                    <p>Choose option:<span>*</span></p>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" checked>
+                        <label class="btn" for="btnradio4">Poached</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio5">
+                        <label class="btn" for="btnradio5">Scrambled</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio6">
+                        <label class="btn" for="btnradio6">Fried</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio7">
+                        <label class="btn" for="btnradio7">Boiled</label>
+                    </div>
+                    <p>Sides:<span></span></p>
+                    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck13">
+                        <label class="btn" for="btncheck13">Salmon $8</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck14">
+                        <label class="btn" for="btncheck14">Halloumi $6</label>
+                    </div>
+                    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck17">
+                        <label class="btn" for="btncheck17">Black Pudding $6</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck18">
+                        <label class="btn" for="btncheck18">Mushrooms $6</label>
+                    </div>
+                    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck15">
+                        <label class="btn" for="btncheck15">Bacon $6</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck16">
+                        <label class="btn" for="btncheck16">Kransky $6</label>
+                    </div>
+
+                    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck19">
+                        <label class="btn" for="btncheck19">Hash-browns $5</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck20">
+                        <label class="btn" for="btncheck20">Avocado $5</label>
+                    </div>
+
+                    <p>Requests:<span></span></p>
+                    <input class="form-control" type="text" placeholder="Notes" aria-label="default input example">
+                    <div class="order-footer d-flex justify-content-between align-items-center">
+                        <div class="qty d-flex justify-content-between align-items-center">
+                            <p>Quantity:</p>
+                            <button class="minus">-</button>
+                            <input class="number" type="text" value="1" aria-label="readonly input example" readonly>
+                            <button class="plus">+</button>
+                        </div>
+                        <a class="btn btn-primary" id="brekkieOrder" href="pay.html" role="button">Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /BREAKFAST MODAL/ -->
+
+    <!-- NAV -->
+    <nav class="navbar fixed-bottom">
+        <ul class="nav container-fluid">
+            <li class="nav-item text-center">
+                <a class="nav-link" href="faq2.html">
+                    <i class="bi bi-question-circle-fill" style="font-size: 25px; color: black;"></i><br> FAQ
+                </a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                    <i class="bi bi-bell-fill" style="font-size: 25px; color: black;"></i><br>HELP
+                </a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="menu.html">
+                    <i class="bi bi-list" style="font-size: 25px; color: black;"></i><br> MENU
+                </a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="pay.html">
+                    <i class="bi bi-credit-card-fill" style="font-size: 25px; color: black;"></i><br> PAY
+                </a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="btn btn-primary" data-bs-toggle="modal" href="#accountModalToggle" role="button">
+                    <i class="bi bi-person-circle" style="font-size: 25px; color: black;"></i><br>ACCOUNT
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /NAV/ -->
+
+    <!-- HELP MODAL -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel">
+        <div class="modal-dialog modal-dialog-centered text-center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalToggleLabel"> Help</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Would you like to speak to one of our colleagues?
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                        data-bs-toggle="modal">Yes</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered text-center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalToggleLabel2">Okay!</p>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    One of our friendly colleagues will be at your table soon.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank You</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /HELP MODAL -->
+
+    <!-- ACCOUNT MODAL -->
+    <div class="modal fade" id="accountModalToggle" aria-hidden="true" aria-labelledby="accountModalToggleLabel">
+        <div class="modal-dialog modal-dialog-centered text-center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="accountModalToggleLabel"> Sign in</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-block">
+                    <form>
+                        <div class="mb-6">
+                            <label for="exampleInputEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail">
+                        </div>
+                        <div class="mb-6">
+                            <label for="exampleInputPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword">
+                        </div>
+                        <div class="form-text"><a href="">Forgot password?</a></div>
+                    </form>
+                    <button class="btn" id="createAccount" data-bs-target="#accountModalToggle2"
+                        data-bs-toggle="modal">Or create an account</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" id="continue" data-bs-dismiss="modal">Sign In</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="accountModalToggle2" aria-hidden="true" aria-labelledby="accountModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered text-center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="accountModalToggleLabel2"> Sign in</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-block">
+                    <form>
+                        <div class="mb-6">
+                            <label for="exampleInputEmail2" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail2">
+                        </div>
+                        <div class="mb-6">
+                            <label for="exampleInputPassword2" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2">
+                        </div>
+                        <div class="mb-6">
+                            <label for="exampleInputPassword3" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword3">
+                        </div>
+                    </form>
+                    <button class="btn" id="createAccount2" data-bs-target="#accountModalToggle" data-bs-toggle="modal">I
+                        already have an account</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" id="continue2" data-bs-dismiss="modal">Sign Up</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /ACCOUNT MODAL -->
+
+    <!-- Bootstraps JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <!-- Custom JS tags -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

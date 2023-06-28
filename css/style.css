@@ -1,0 +1,1207 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Yesteryear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Yesteryear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Yesteryear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Yesteryear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Yesteryear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Yesteryear&display=swap");
+body .logo {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+body .logo img {
+  width: 300px;
+}
+body h1 {
+  font-family: "Yesteryear", cursive;
+  font-size: 48px;
+  text-align: center;
+}
+body h4 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+}
+body .card {
+  width: 80%;
+  margin: auto;
+  background-color: #F5F2DB;
+  border: solid 2px #55868F;
+  margin-bottom: 10px;
+  display: flex;
+}
+body .card .card-header {
+  background-color: #F5F2DB;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 2px #55868F;
+}
+body .card .nav-item {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+body .card .nav-item .nav-link {
+  margin: 0;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #000000;
+}
+body .card .nav-item .nav-link.active {
+  background-color: #55868F;
+  color: #F5F2DB;
+}
+body .card .card-body {
+  padding: 10px;
+}
+body .card .card-body .tab-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+body .card .card-body .tab-content .form-label {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+body .card .card-body .tab-content .form-control {
+  margin-bottom: 5px;
+  width: 225px;
+}
+body .card .card-body .tab-content .form-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+body .card .card-body .tab-content .form-text a {
+  color: #55868F;
+}
+body .card .card-body .tab-content .btn {
+  margin-top: 10px;
+  border: solid 3px #E5C372;
+  background-color: #BD554C;
+  color: #E5C372;
+  border-radius: 10px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: #E5C372;
+}
+body #guest {
+  text-decoration: none;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
+  color: #BD554C;
+  width: 80%;
+  margin: auto;
+  border: solid 2px #55868F;
+  border-radius: 10px;
+  background-color: #F5F2DB;
+  display: flex;
+  justify-content: center;
+}
+body .navbar {
+  background-color: #F5F2DB;
+  border-top: solid 2px #000000;
+  padding: 0;
+}
+body .navbar .container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+body .navbar .container-fluid .nav-item {
+  width: 50%;
+}
+body .navbar .container-fluid .nav-item .nav-link {
+  color: #000000;
+}
+body .navbar .container-fluid .nav-item .btn-primary {
+  background-color: #F5F2DB;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+}
+body .navbar .container-fluid .nav-item .btn-primary:focus {
+  box-shadow: none;
+}
+body .modal .modal-content {
+  background-color: #F5F2DB;
+}
+body .modal .modal-content .modal-header {
+  font-family: "Yesteryear", cursive;
+  font-size: 39px;
+  width: 100%;
+  border-bottom: none;
+}
+body .modal .modal-content .modal-header .modal-title {
+  width: 100%;
+  text-align: center;
+}
+body .modal .modal-content .modal-header .btn-close {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+body .modal .modal-content .modal-body {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .modal .modal-content .modal-footer {
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .modal .modal-content .modal-footer .btn-primary {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #BD554C;
+  background-color: #F5F2DB;
+  border: solid 2px #55868F;
+  margin: 0 15px 15px;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 601px) {
+  body .card {
+    max-width: 450px;
+  }
+  body .guest {
+    max-width: 450px;
+  }
+}
+body {
+  overflow: auto;
+}
+body .header {
+  width: 100%;
+  height: 100px;
+  background-color: #55868F;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+body .header img {
+  width: 135px;
+  text-align: left;
+  transform: rotate(-15deg);
+}
+body .faq .subheading img {
+  padding: 0 15px;
+}
+body .faq .subheading h2 {
+  font-family: "Yesteryear", cursive;
+  font-size: 39px;
+  text-align: center;
+  margin-bottom: 0;
+}
+body .faq p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 25px;
+}
+body .accordion {
+  border: solid 2px #55868F;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+body .accordion .accordion-item {
+  background-color: #F5F2DB;
+}
+body .accordion .accordion-item .accordion-button {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #F5F2DB;
+}
+body .accordion .accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+body .accordion .accordion-item .accordion-button:not(.collapsed) {
+  color: #BD554C;
+}
+body .accordion .accordion-item .accordion-body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+body p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  margin: 25px;
+}
+body #back {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
+  color: #BD554C;
+  text-decoration: none;
+  margin: 25px;
+  border: none;
+  background-color: #F5F2DB;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 100px;
+}
+body .navbar {
+  background-color: #F5F2DB;
+  border-top: solid 2px #000000;
+  padding: 0;
+}
+body .navbar .container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+body .navbar .container-fluid .nav-item {
+  width: 50%;
+}
+body .navbar .container-fluid .nav-item .nav-link {
+  color: #000000;
+}
+body .navbar .container-fluid .nav-item .btn-primary {
+  background-color: #F5F2DB;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+}
+body .navbar .container-fluid .nav-item .btn-primary:focus {
+  box-shadow: none;
+}
+body .modal .modal-content {
+  background-color: #F5F2DB;
+}
+body .modal .modal-content .modal-header {
+  font-family: "Yesteryear", cursive;
+  font-size: 39px;
+  width: 100%;
+  border-bottom: none;
+}
+body .modal .modal-content .modal-header .modal-title {
+  width: 100%;
+  text-align: center;
+}
+body .modal .modal-content .modal-header .btn-close {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+body .modal .modal-content .modal-body {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .modal .modal-content .modal-footer {
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .modal .modal-content .modal-footer .btn-primary {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #BD554C;
+  background-color: #F5F2DB;
+  border: solid 2px #55868F;
+  margin: 0 15px 15px;
+  border-radius: 10px;
+}
+
+body .tip p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 100px;
+}
+body #accountModalToggle .modal-content,
+body #accountModalToggle2 .modal-content {
+  background-color: #F5F2DB;
+  border: solid 2px #E5C372;
+}
+body #accountModalToggle .modal-content .modal-header,
+body #accountModalToggle2 .modal-content .modal-header {
+  width: 100%;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+body #accountModalToggle .modal-content .modal-header .modal-title,
+body #accountModalToggle2 .modal-content .modal-header .modal-title {
+  font-family: "Yesteryear", cursive;
+  font-size: 39px;
+  width: 100%;
+  text-align: center;
+}
+body #accountModalToggle .modal-content .modal-header .btn-close,
+body #accountModalToggle2 .modal-content .modal-header .btn-close {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+body #accountModalToggle .modal-content .modal-body,
+body #accountModalToggle2 .modal-content .modal-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+body #accountModalToggle .modal-content .modal-body form label,
+body #accountModalToggle2 .modal-content .modal-body form label {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+body #accountModalToggle .modal-content .modal-body form .form-text,
+body #accountModalToggle2 .modal-content .modal-body form .form-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+body #accountModalToggle .modal-content .modal-body form .form-text a,
+body #accountModalToggle2 .modal-content .modal-body form .form-text a {
+  text-decoration: none;
+  color: #55868F;
+}
+body #accountModalToggle .modal-content .modal-body #createAccount, body #accountModalToggle .modal-content .modal-body #createAccount2,
+body #accountModalToggle2 .modal-content .modal-body #createAccount,
+body #accountModalToggle2 .modal-content .modal-body #createAccount2 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #BD554C;
+  background-color: #F5F2DB;
+}
+body #accountModalToggle .modal-content .modal-footer,
+body #accountModalToggle2 .modal-content .modal-footer {
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+body #accountModalToggle .modal-content .modal-footer #continue, body #accountModalToggle .modal-content .modal-footer #continue2,
+body #accountModalToggle2 .modal-content .modal-footer #continue,
+body #accountModalToggle2 .modal-content .modal-footer #continue2 {
+  margin-top: 10px;
+  border: solid 3px #E5C372;
+  background-color: #BD554C;
+  color: #E5C372;
+  border-radius: 10px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 5px 30px;
+}
+
+@media only screen and (min-width: 601px) {
+  body .tip p {
+    text-align: center;
+  }
+}
+body .subheading img {
+  padding: 0 15px;
+}
+body .subheading h2 {
+  font-family: "Yesteryear", cursive;
+  font-size: 39px;
+  text-align: center;
+  margin-bottom: 0;
+}
+body .menu-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+body .menu-nav a {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 5px 10px;
+  color: #000000;
+}
+body .menu-nav .nav-link.active,
+body .menu-nav .nav-link:focus,
+body .menu-nav .nav-link:hover {
+  color: #BD554C;
+  border-bottom: solid 2px #BD554C;
+}
+body .drinks {
+  margin-bottom: 90px;
+}
+body .drinks .dropdown {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+body .drinks .dropdown .btn {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border: solid 1px #000000;
+  border-radius: 10px;
+  background-color: #F5F2DB;
+  color: #000000;
+}
+body .drinks .dropdown .btn:focus {
+  box-shadow: none;
+}
+body .drinks .dropdown .dropdown-menu.show {
+  border: solid 1px #000000;
+  background-color: #F5F2DB;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 10px;
+}
+body .drinks .drinks-list h3 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+body .drinks .drinks-list h3 span {
+  margin-left: 10px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+body .drinks .drinks-list .list-group {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 90%;
+  border: solid 1px #000000;
+}
+body .drinks .drinks-list .list-group .list-group-item {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #F5F2DB;
+}
+body #whiteCoffeeModal h5 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+}
+body #whiteCoffeeModal .modal-body {
+  display: block;
+  padding-top: 0;
+}
+body #whiteCoffeeModal .modal-body p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+body #whiteCoffeeModal .modal-body p span {
+  color: #BD554C;
+}
+body #whiteCoffeeModal .modal-body .btn-group,
+body #whiteCoffeeModal .modal-body .btn-group-vertical {
+  margin-bottom: 10px;
+}
+body #whiteCoffeeModal .modal-body .btn-group .btn,
+body #whiteCoffeeModal .modal-body .btn-group-vertical .btn {
+  background-color: #F5F2DB;
+  border: solid 2px #55868F;
+}
+body #whiteCoffeeModal .modal-body .btn-group .btn-check:checked + .btn,
+body #whiteCoffeeModal .modal-body .btn-group-vertical .btn-check:checked + .btn {
+  background-color: #55868F;
+  color: #F5F2DB;
+  border: solid 2px #BD554C;
+}
+body #whiteCoffeeModal .modal-body .btn-group label,
+body #whiteCoffeeModal .modal-body .btn-group-vertical label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+body #whiteCoffeeModal .modal-body .order-footer {
+  margin-bottom: 15px;
+}
+body #whiteCoffeeModal .modal-body .order-footer .qty .minus {
+  margin-left: 10px;
+  height: 40px;
+  width: 30px;
+  background-color: #F5F2DB;
+  border: solid 1px #55868F;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+}
+body #whiteCoffeeModal .modal-body .order-footer .qty .number {
+  border: solid 1px #55868F;
+  padding: 12px 10px;
+  height: 40px;
+  border-radius: 0;
+  width: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+body #whiteCoffeeModal .modal-body .order-footer .qty .plus {
+  height: 40px;
+  width: 30px;
+  background-color: #F5F2DB;
+  border: solid 1px #55868F;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+body #whiteCoffeeModal .modal-body .form-control {
+  margin-bottom: 10px;
+}
+body #whiteCoffeeModal .modal-body #drinksOrder {
+  margin-top: 10px;
+  border: solid 3px #E5C372;
+  background-color: #BD554C;
+  color: #E5C372;
+  border-radius: 10px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: #E5C372;
+}
+body #whiteCoffeeModal .form-control {
+  height: 40px;
+}
+body .breakfast {
+  margin-bottom: 90px;
+}
+body .breakfast .dropdown {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+body .breakfast .dropdown .btn {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border: solid 1px #000000;
+  border-radius: 10px;
+  background-color: #F5F2DB;
+  color: #000000;
+}
+body .breakfast .dropdown .btn:focus {
+  box-shadow: none;
+}
+body .breakfast .dropdown .dropdown-menu.show {
+  border: solid 1px #000000;
+  background-color: #F5F2DB;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 10px;
+}
+body .breakfast .key p img {
+  width: 15px;
+  margin-top: -5px;
+}
+body .breakfast .breakfast-list {
+  margin-bottom: 50px;
+}
+body .breakfast .breakfast-list h3 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+body .breakfast .breakfast-list .list-group {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 90%;
+  border: solid 1px #000000;
+}
+body .breakfast .breakfast-list .list-group .list-group-item {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #F5F2DB;
+}
+body .breakfast .breakfast-list .list-group .list-group-item .description h5 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+body .breakfast .breakfast-list .list-group .list-group-item .description h5 img {
+  width: 15px;
+  margin-top: -5px;
+  margin-left: 5px;
+}
+body .breakfast .breakfast-list .list-group .list-group-item .description p {
+  margin: 0px;
+}
+body #brekkieModal .modal-header h5 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+}
+body #brekkieModal .eggs {
+  width: 150px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+body #brekkieModal .modal-body {
+  display: block;
+  padding-top: 0;
+}
+body #brekkieModal .modal-body p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+body #brekkieModal .modal-body p span {
+  color: #BD554C;
+}
+body #brekkieModal .modal-body .btn-group,
+body #brekkieModal .modal-body .btn-group-vertical {
+  margin-bottom: 10px;
+}
+body #brekkieModal .modal-body .btn-group .btn,
+body #brekkieModal .modal-body .btn-group-vertical .btn {
+  background-color: #F5F2DB;
+  border: solid 2px #55868F;
+}
+body #brekkieModal .modal-body .btn-group .btn-check:checked + .btn,
+body #brekkieModal .modal-body .btn-group-vertical .btn-check:checked + .btn {
+  background-color: #55868F;
+  color: #F5F2DB;
+  border: solid 2px #BD554C;
+}
+body #brekkieModal .modal-body .btn-group label,
+body #brekkieModal .modal-body .btn-group-vertical label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+body #brekkieModal .modal-body .order-footer {
+  margin-bottom: 15px;
+}
+body #brekkieModal .modal-body .order-footer .qty .minus {
+  margin-left: 10px;
+  height: 40px;
+  width: 30px;
+  background-color: #F5F2DB;
+  border: solid 1px #55868F;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+}
+body #brekkieModal .modal-body .order-footer .qty .number {
+  border: solid 1px #55868F;
+  padding: 12px 10px;
+  height: 40px;
+  border-radius: 0;
+  width: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+body #brekkieModal .modal-body .order-footer .qty .plus {
+  height: 40px;
+  width: 30px;
+  background-color: #F5F2DB;
+  border: solid 1px #55868F;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+body #brekkieModal .modal-body .form-control {
+  margin-bottom: 10px;
+}
+body #brekkieModal .modal-body #brekkieOrder {
+  margin-top: 10px;
+  border: solid 3px #E5C372;
+  background-color: #BD554C;
+  color: #E5C372;
+  border-radius: 10px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: #E5C372;
+}
+body #brekkieModal .form-control {
+  height: 40px;
+}
+body .navbar {
+  background-color: #F5F2DB;
+  border-top: solid 2px #000000;
+  padding: 0;
+}
+body .navbar .container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+body .navbar .container-fluid .nav-item {
+  width: 20%;
+}
+body .navbar .container-fluid .nav-item .nav-link {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-size: 12px;
+  padding: 10px 0;
+}
+body .navbar .container-fluid .nav-item .btn-primary {
+  background-color: #F5F2DB;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 10px 0;
+}
+body .navbar .container-fluid .nav-item .btn-primary:focus {
+  box-shadow: none;
+}
+body .modal .modal-content {
+  background-color: #F5F2DB;
+  border: solid 2px #E5C372;
+}
+body .modal .modal-content .modal-header {
+  width: 100%;
+  border-bottom: none;
+}
+body .modal .modal-content .modal-header .modal-title {
+  font-family: "Yesteryear", cursive;
+  font-size: 39px;
+  width: 100%;
+  text-align: center;
+}
+body .modal .modal-content .modal-header .btn-close {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+body .modal .modal-content .modal-body {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .modal .modal-content .modal-footer {
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .modal .modal-content .modal-footer .btn-primary {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #BD554C;
+  background-color: #F5F2DB;
+  border: solid 2px #55868F;
+  margin: 0 15px 15px;
+  border-radius: 10px;
+}
+body #accountModalToggle .modal-content,
+body #accountModalToggle2 .modal-content {
+  background-color: #F5F2DB;
+  border: solid 2px #E5C372;
+}
+body #accountModalToggle .modal-content .modal-header,
+body #accountModalToggle2 .modal-content .modal-header {
+  width: 100%;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+body #accountModalToggle .modal-content .modal-header .modal-title,
+body #accountModalToggle2 .modal-content .modal-header .modal-title {
+  font-family: "Yesteryear", cursive;
+  font-size: 39px;
+  width: 100%;
+  text-align: center;
+}
+body #accountModalToggle .modal-content .modal-header .btn-close,
+body #accountModalToggle2 .modal-content .modal-header .btn-close {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+body #accountModalToggle .modal-content .modal-body,
+body #accountModalToggle2 .modal-content .modal-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+body #accountModalToggle .modal-content .modal-body form label,
+body #accountModalToggle2 .modal-content .modal-body form label {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+body #accountModalToggle .modal-content .modal-body form .form-text,
+body #accountModalToggle2 .modal-content .modal-body form .form-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+body #accountModalToggle .modal-content .modal-body form .form-text a,
+body #accountModalToggle2 .modal-content .modal-body form .form-text a {
+  text-decoration: none;
+  color: #55868F;
+}
+body #accountModalToggle .modal-content .modal-body #createAccount, body #accountModalToggle .modal-content .modal-body #createAccount2,
+body #accountModalToggle2 .modal-content .modal-body #createAccount,
+body #accountModalToggle2 .modal-content .modal-body #createAccount2 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #BD554C;
+  background-color: #F5F2DB;
+}
+body #accountModalToggle .modal-content .modal-footer,
+body #accountModalToggle2 .modal-content .modal-footer {
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+body #accountModalToggle .modal-content .modal-footer #continue, body #accountModalToggle .modal-content .modal-footer #continue2,
+body #accountModalToggle2 .modal-content .modal-footer #continue,
+body #accountModalToggle2 .modal-content .modal-footer #continue2 {
+  margin-top: 10px;
+  border: solid 3px #E5C372;
+  background-color: #BD554C;
+  color: #E5C372;
+  border-radius: 10px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 5px 30px;
+}
+
+@media only screen and (min-width: 601px) {
+  body .drinks .dropdown {
+    display: flex;
+    justify-content: center;
+  }
+  body .drinks .drinks-list h3 {
+    text-align: center;
+  }
+  body .breakfast .dropdown {
+    display: flex;
+    justify-content: center;
+  }
+  body .breakfast .key p {
+    text-align: center;
+  }
+  body .breakfast .breakfast-list h3 {
+    text-align: center;
+  }
+}
+body #table {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0;
+}
+body #payItem form input {
+  margin: 15px;
+}
+body #payItem form #bothChecked {
+  display: none;
+}
+body #payItem form #bothBox:checked ~ #bothChecked {
+  display: block;
+}
+body #payItem form #bothBox:checked ~ #bothUnchecked {
+  display: none;
+}
+body #payItem form .select1 {
+  margin-bottom: 185px;
+}
+body #payItem .payment-list {
+  margin-top: -255px;
+  z-index: 99;
+}
+body #payItem .payment-list h3 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+body #payItem .payment-list .list-group {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 80%;
+  border: solid 1px #000000;
+}
+body #payItem .payment-list .list-group .list-group-item {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #F5F2DB;
+}
+body #payItem .payment-list .list-group .list-group-item .description {
+  margin-bottom: 10px;
+}
+body #payItem .payment-list .list-group .list-group-item .description h5 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+body #payItem .payment-list .list-group .list-group-item .description h5 img {
+  width: 15px;
+  margin-top: -5px;
+  margin-left: 5px;
+}
+body #payItem .payment-list .list-group .list-group-item .description p {
+  margin: 0px;
+}
+body #payItem .payment-list .list-group .list-group-item .sum {
+  border-top: solid 1px #000000;
+}
+body #payItem .payment-list .list-group .list-group-item .sum .qty {
+  margin: 5px 0;
+}
+body #payItem .payment-list .list-group .list-group-item .sum .qty p {
+  margin: 0;
+}
+body #payItem .payment-list .list-group .list-group-item .sum h5 {
+  margin-top: 5px;
+}
+body #payItem .payment-list .list-group .list-group-item .progress {
+  border: solid 1px #000000;
+  background-color: #F5F2DB;
+  height: 8px;
+}
+body #payItem .payment-list .list-group .list-group-item .progress .progress-bar {
+  background-color: #E5C372;
+}
+body #payItem .payment-list .list-group .list-group-item .tracking p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-size: 12px;
+  margin: 5px 0;
+}
+body .total .balance h5 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 10px 40px;
+}
+body .total span {
+  margin: 10px 40px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+body .order {
+  border: solid 3px #E5C372;
+  background-color: #BD554C;
+  color: #E5C372;
+  border-radius: 10px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 5px 30px;
+}
+body .modal .modal-content {
+  background-color: #F5F2DB;
+  border: solid 2px #E5C372;
+}
+body .modal .modal-content .modal-header {
+  width: 100%;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+body .modal .modal-content .modal-header .modal-title {
+  font-family: "Yesteryear", cursive;
+  font-size: 39px;
+  width: 100%;
+  text-align: center;
+}
+body .modal .modal-content .modal-header .btn-close {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+body .modal .modal-content .modal-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+body .modal .modal-content .modal-body .cards p {
+  margin: 0;
+  text-align: center;
+}
+body .modal .modal-content .modal-body .cards .card-icons {
+  margin: 0 30px;
+}
+body .modal .modal-content .modal-body .cards .card-icons .fa-brands {
+  font-size: 50px;
+  margin: 10px 0;
+  width: 50px;
+}
+body .modal .modal-content .modal-body .input-group {
+  margin: 15px 5px;
+  width: 98%;
+}
+body .modal .modal-content .modal-body .input-group.second {
+  margin: 15px 5px 0 5px;
+  width: 98%;
+}
+body .modal .modal-content .modal-body .security {
+  margin-top: 0;
+}
+body .modal .modal-content .modal-footer {
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+body .modal .modal-content .modal-footer #confirm {
+  margin-top: 10px;
+  border: solid 3px #E5C372;
+  background-color: #BD554C;
+  color: #E5C372;
+  border-radius: 10px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 5px 30px;
+}
+body #payModal2 .modal-body {
+  margin-bottom: 15px;
+}
+body #accountModalToggle .modal-content,
+body #accountModalToggle2 .modal-content {
+  background-color: #F5F2DB;
+  border: solid 2px #E5C372;
+}
+body #accountModalToggle .modal-content .modal-header,
+body #accountModalToggle2 .modal-content .modal-header {
+  width: 100%;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+body #accountModalToggle .modal-content .modal-header .modal-title,
+body #accountModalToggle2 .modal-content .modal-header .modal-title {
+  font-family: "Yesteryear", cursive;
+  font-size: 39px;
+  width: 100%;
+  text-align: center;
+}
+body #accountModalToggle .modal-content .modal-header .btn-close,
+body #accountModalToggle2 .modal-content .modal-header .btn-close {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+body #accountModalToggle .modal-content .modal-body,
+body #accountModalToggle2 .modal-content .modal-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+body #accountModalToggle .modal-content .modal-body form label,
+body #accountModalToggle2 .modal-content .modal-body form label {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+body #accountModalToggle .modal-content .modal-body form .form-text,
+body #accountModalToggle2 .modal-content .modal-body form .form-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+body #accountModalToggle .modal-content .modal-body form .form-text a,
+body #accountModalToggle2 .modal-content .modal-body form .form-text a {
+  text-decoration: none;
+  color: #55868F;
+}
+body #accountModalToggle .modal-content .modal-body #createAccount,
+body #accountModalToggle .modal-content .modal-body #createAccount2,
+body #accountModalToggle2 .modal-content .modal-body #createAccount,
+body #accountModalToggle2 .modal-content .modal-body #createAccount2 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #BD554C;
+  background-color: #F5F2DB;
+}
+body #accountModalToggle .modal-content .modal-footer,
+body #accountModalToggle2 .modal-content .modal-footer {
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+body #accountModalToggle .modal-content .modal-footer #continue,
+body #accountModalToggle .modal-content .modal-footer #continue2,
+body #accountModalToggle2 .modal-content .modal-footer #continue,
+body #accountModalToggle2 .modal-content .modal-footer #continue2 {
+  margin-top: 10px;
+  border: solid 3px #E5C372;
+  background-color: #BD554C;
+  color: #E5C372;
+  border-radius: 10px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 5px 30px;
+}
+
+@media only screen and (min-width: 601px) {
+  body #payItem,
+body .total {
+    width: 50%;
+    margin: auto;
+  }
+}
+body {
+  background-color: #F5F2DB;
+}/*# sourceMappingURL=style.css.map */

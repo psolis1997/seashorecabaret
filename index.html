@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstraps CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Seashore Cabaret</title>
+</head>
+
+<body style="background-image: url('img/bg.png'); background-size: 100%;">
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="img/logo.png" alt="Seashore Cabaret Logo">
+    </div>
+    <!-- /LOGO/ -->
+
+    <!-- HEADER -->
+    <h1>Welcome to Table 1</h1>
+    <h4>To start ordering please:</h4>
+    <!-- /HEADER/ -->
+
+    <!-- FORM CARD -->
+    <div class="card">
+        <div class="card-header">
+            <ul class="nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#signin" data-bs-toggle="tab">Sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#signup" data-bs-toggle="tab">Sign up</a>
+                </li>
+            </ul>
+        </div>
+        <!-- CARD BODY -->
+        <div class="card-body text-center">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="signin">
+                    <form>
+                        <div class="mb-6">
+                            <label for="exampleInputEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail">
+                        </div>
+                        <div class="mb-6">
+                            <label for="exampleInputPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword">
+                        </div>
+                        <div id="passwordHelp" class="form-text"><a href="">Forgot password?</a></div>
+                        <a class="btn btn-primary" href="menu.html" role="button">Sign In</a>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="signup">
+                    <form>
+                        <div class="mb-6">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="mb-6">
+                            <label for="exampleInputPassword2" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2">
+                        </div>
+                        <div class="mb-6">
+                            <label for="exampleInputPassword3" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword3">
+                        </div>
+                        <a class="btn btn-primary" href="menu.html" role="button">Sign Up</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /FORM CARD/ -->
+    <!-- GUEST BTN -->
+    <a class="btn" id="guest" href="menu.html" role="button">Or continue as a Guest <i class="bi bi-arrow-right"></i></a>
+    <!-- /GUEST -->
+
+    <!-- NAV -->
+    <nav class="navbar fixed-bottom">
+        <ul class="nav container-fluid">
+            <li class="nav-item text-center">
+                <a class="nav-link" href="faq.html">
+                    <i class="bi bi-question-circle-fill" style="font-size: 25px; color: black;"></i><br> FAQ
+                </a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                    <i class="bi bi-bell-fill" style="font-size: 25px; color: black;"></i><br>HELP
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /NAV/ -->
+
+    <!-- HELP MODAL -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel">
+        <div class="modal-dialog modal-dialog-centered text-center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalToggleLabel"> Help</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Would you like to speak to one of our colleagues?
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                        data-bs-toggle="modal">Yes</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered text-center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalToggleLabel2">Okay!</p>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    One of our friendly colleagues will be at your table soon.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank You</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /HELP MODAL -->
+
+    <!-- Bootstraps JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <!-- Custom JS tags -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

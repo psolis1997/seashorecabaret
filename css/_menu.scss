@@ -1,0 +1,585 @@
+@import 'colors';
+@import 'fonts';
+
+// MOBILE
+body {
+
+    .subheading {
+        img {
+            padding: 0 15px;
+        }
+
+        h2 {
+            @include header2;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+
+    .menu-nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        a {
+            @include header4;
+            padding: 5px 10px;
+            color: $black;
+        }
+
+        .nav-link.active,
+        .nav-link:focus,
+        .nav-link:hover {
+            color: $red;
+            border-bottom: solid 2px $red;
+        }
+    }
+
+    // DRINKS
+    .drinks {
+        margin-bottom: 90px;
+
+        .dropdown {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: left;
+            margin-bottom: 20px;
+
+            .btn {
+                @include header5;
+                border: solid 1px $black;
+                border-radius: 10px;
+                background-color: $cream;
+                color: $black;
+            }
+
+            .btn:focus {
+                box-shadow: none;
+            }
+
+            .dropdown-menu.show {
+                border: solid 1px $black;
+                background-color: $cream;
+                @include header5;
+                border-radius: 10px;
+            }
+        }
+
+        .drinks-list {
+
+            h3 {
+                @include header3;
+                margin-bottom: 10px;
+                padding-left: 20px;
+
+                span {
+                    margin-left: 10px;
+                    @include header5;
+                }
+            }
+
+            .list-group {
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                margin-bottom: 20px;
+                width: 90%;
+                border: solid 1px $black;
+
+                .list-group-item {
+                    @include header5;
+                    background-color: $cream;
+                }
+            }
+        }
+    }
+
+    #whiteCoffeeModal {
+
+        h5 {
+            @include header5;
+            text-align: left;
+        }
+
+        .modal-body {
+            display: block;
+            padding-top: 0;
+
+            p {
+                @include para;
+                margin: 0;
+
+                span {
+                    color: $red;
+                }
+            }
+
+            .btn-group,
+            .btn-group-vertical {
+                margin-bottom: 10px;
+
+                .btn {
+                    background-color: $cream;
+                    border: solid 2px $blue;
+                }
+
+                .btn-check:checked+.btn {
+                    background-color: $blue;
+                    color: $cream;
+                    border: solid 2px $red;
+                }
+
+                label {
+                    @include para;
+                }
+            }
+
+            .order-footer {
+                margin-bottom: 15px;
+
+                .qty {
+                    .minus {
+                        margin-left: 10px;
+                        height: 40px;
+                        width: 30px;
+                        background-color: $cream;
+                        border: solid 1px $blue;
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        text-align: center;
+                    }
+
+                    .number {
+                        border: solid 1px $blue;
+                        padding: 12px 10px;
+                        height: 40px;
+                        border-radius: 0;
+                        width: 30px;
+                        @include para;
+                    }
+
+                    .plus {
+                        height: 40px;
+                        width: 30px;
+                        background-color: $cream;
+                        border: solid 1px $blue;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .form-control {
+                margin-bottom: 10px;
+            }
+
+            #drinksOrder {
+                margin-top: 10px;
+                border: solid 3px $gold;
+                background-color: $red;
+                color: $gold;
+                border-radius: 10px;
+                @include header5;
+                text-decoration: none;
+                color: $gold;
+            }
+        }
+
+        .form-control {
+            height: 40px;
+        }
+    }
+
+    // BREAKFAST
+    .breakfast {
+        margin-bottom: 90px;
+
+        .dropdown {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: left;
+            margin-bottom: 20px;
+
+            .btn {
+                @include header5;
+                border: solid 1px $black;
+                border-radius: 10px;
+                background-color: $cream;
+                color: $black;
+            }
+
+            .btn:focus {
+                box-shadow: none;
+            }
+
+            .dropdown-menu.show {
+                border: solid 1px $black;
+                background-color: $cream;
+                @include header5;
+                border-radius: 10px;
+            }
+        }
+
+        .key {
+            p {
+                img {
+                    width: 15px;
+                    margin-top: -5px;
+                }
+            }
+        }
+
+        .breakfast-list {
+            margin-bottom: 50px;
+
+            h3 {
+                @include header3;
+                margin-bottom: 10px;
+                padding-left: 20px;
+            }
+
+            .list-group {
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                margin-bottom: 20px;
+                width: 90%;
+                border: solid 1px $black;
+
+                .list-group-item {
+                    @include header5;
+                    background-color: $cream;
+
+                    .description {
+                        h5 {
+                            @include header5;
+
+                            img {
+                                width: 15px;
+                                margin-top: -5px;
+                                margin-left: 5px;
+                            }
+                        }
+
+                        p {
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #brekkieModal {
+
+        .modal-header {
+            h5 {
+                @include header5;
+                text-align: left;
+            }
+        }
+
+        .eggs {
+            width: 150px;
+            margin-left: 15px;
+            margin-bottom: 10px;
+        }
+
+        .modal-body {
+            display: block;
+            padding-top: 0;
+
+            p {
+                @include para;
+                margin: 0;
+
+                span {
+                    color: $red;
+                }
+            }
+
+            .btn-group,
+            .btn-group-vertical {
+                margin-bottom: 10px;
+
+                .btn {
+                    background-color: $cream;
+                    border: solid 2px $blue;
+                }
+
+                .btn-check:checked+.btn {
+                    background-color: $blue;
+                    color: $cream;
+                    border: solid 2px $red;
+                }
+
+                label {
+                    @include para;
+                }
+            }
+
+            .order-footer {
+                margin-bottom: 15px;
+
+                .qty {
+                    .minus {
+                        margin-left: 10px;
+                        height: 40px;
+                        width: 30px;
+                        background-color: $cream;
+                        border: solid 1px $blue;
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        text-align: center;
+                    }
+
+                    .number {
+                        border: solid 1px $blue;
+                        padding: 12px 10px;
+                        height: 40px;
+                        border-radius: 0;
+                        width: 30px;
+                        @include para;
+                    }
+
+                    .plus {
+                        height: 40px;
+                        width: 30px;
+                        background-color: $cream;
+                        border: solid 1px $blue;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .form-control {
+                margin-bottom: 10px;
+            }
+
+            #brekkieOrder {
+                margin-top: 10px;
+                border: solid 3px $gold;
+                background-color: $red;
+                color: $gold;
+                border-radius: 10px;
+                @include header5;
+                text-decoration: none;
+                color: $gold;
+            }
+        }
+
+        .form-control {
+            height: 40px;
+        }
+    }
+
+    .navbar {
+        background-color: $cream;
+        border-top: solid 2px $black;
+        padding: 0;
+
+        .container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0;
+
+            .nav-item {
+                width: 20%;
+
+                .nav-link {
+                    color: $black;
+                    @include para;
+                    font-size: 12px;
+                    padding: 10px 0;
+                }
+
+                .btn-primary {
+                    background-color: $cream;
+                    color: $black;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 12px;
+                    padding: 10px 0;
+                }
+
+                .btn-primary:focus {
+                    box-shadow: none;
+                }
+
+            }
+        }
+    }
+
+    .modal {
+        .modal-content {
+            background-color: $cream;
+            border: solid 2px $gold;
+
+            .modal-header {
+                width: 100%;
+                border-bottom: none;
+
+                .modal-title {
+                    @include header2;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .btn-close {
+                    font-size: 15px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: right;
+                }
+            }
+
+            .modal-body {
+                @include header4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .modal-footer {
+                border-top: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .btn-primary {
+                    @include header5;
+                    color: $red;
+                    background-color: $cream;
+                    border: solid 2px $blue;
+                    margin: 0 15px 15px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    #accountModalToggle,
+    #accountModalToggle2 {
+        .modal-content {
+            background-color: $cream;
+            border: solid 2px $gold;
+
+            .modal-header {
+                width: 100%;
+                border-bottom: none;
+                padding-bottom: 0;
+
+                .modal-title {
+                    @include header2;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .btn-close {
+                    font-size: 15px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: right;
+                }
+            }
+
+            .modal-body {
+                padding-top: 0;
+                padding-bottom: 0;
+
+                form {
+
+                    label {
+                        @include header5;
+                    }
+
+                    .form-text {
+                        @include para;
+
+                        a {
+                            text-decoration: none;
+                            color: $blue;
+                        }
+                    }
+                }
+
+                #createAccount, #createAccount2 {
+                    @include header5;
+                    color: $red;
+                    background-color: $cream;
+                }
+
+            }
+
+            .modal-footer {
+                border-top: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 10px;
+                padding-bottom: 25px;
+
+
+                #continue, #continue2 {
+                    margin-top: 10px;
+                    border: solid 3px $gold;
+                    background-color: $red;
+                    color: $gold;
+                    border-radius: 10px;
+                    @include header5;
+                    padding: 5px 30px;
+                }
+            }
+        }
+    }
+
+}
+
+// TABLET
+@media only screen and (min-width: 601px) {
+    body {
+
+        .drinks {
+
+            .dropdown {
+                display: flex;
+                justify-content: center;
+            }
+
+            .drinks-list {
+
+                h3 {
+                    text-align: center;
+                }
+            }
+        }
+
+        .breakfast {
+
+            .dropdown {
+                display: flex;
+                justify-content: center;
+            }
+
+            .key {
+                p {
+                    text-align: center;
+                }
+            }
+
+            .breakfast-list {
+
+                h3 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

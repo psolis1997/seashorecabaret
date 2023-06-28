@@ -1,0 +1,175 @@
+@import 'colors';
+@import 'fonts';
+
+// MOBILE
+body {
+    overflow: auto;
+
+    .header {
+        width: 100%;
+        height: 100px;
+        background-color: $blue;        
+        margin-bottom: 30px;
+        padding-left: 10px;
+
+        img {
+            width: 135px;
+            text-align: left;
+            transform: rotate(-15deg);
+        }
+    }
+
+    .faq {
+        .subheading {
+            img {
+                padding: 0 15px;
+            }
+            h2 {
+                @include header2;
+                text-align: center;
+                margin-bottom: 0;
+            }
+        }
+
+        p {
+            @include para;
+            text-align: center;
+            margin: 25px;
+        }
+    }
+
+    .accordion {
+        border: solid 2px $blue;
+        border-radius: 10px;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+
+        .accordion-item {
+            background-color: $cream;
+
+            .accordion-button {
+                @include header5;
+                background-color: $cream;
+            }
+
+            .accordion-button:focus {
+                box-shadow: none;
+            }
+
+            .accordion-button:not(.collapsed) {
+                color: $red;
+            }
+
+            .accordion-body {
+                @include para;
+            }
+        }
+    }
+
+    p {
+        @include para;
+        text-align: left;
+        margin: 25px;
+    }
+
+    #back {
+        @include header4;
+        font-weight: 700;
+        color: $red;
+        text-decoration: none;
+        margin: 25px;
+        border: none;
+        background-color: $cream;
+        display: flex;
+        justify-content: left;
+        margin-bottom: 100px;
+    }
+
+    .navbar {
+        background-color: $cream;
+        border-top: solid 2px $black;
+        padding: 0;
+
+        .container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0;
+
+            .nav-item {
+                width: 50%;
+
+                .nav-link {
+                    color: $black;
+                }
+
+                .btn-primary {
+                    background-color: $cream;
+                    color: $black;
+                    border: none;
+                    border-radius: 10px;
+                }
+
+                .btn-primary:focus {
+                    box-shadow: none;
+                }
+
+            }
+        }
+    }
+
+    .modal {
+        .modal-content {
+            background-color: $cream;
+
+            .modal-header {
+                @include header2;
+                width: 100%;
+                border-bottom: none;
+
+                .modal-title {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .btn-close {
+                    font-size: 15px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: right;
+                }
+            }
+
+            .modal-body {
+                @include header4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .modal-footer {
+                border-top: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .btn-primary {
+                    @include header5;
+                    color: $red;
+                    background-color: $cream;
+                    border: solid 2px $blue;
+                    margin: 0 15px 15px;
+                    border-radius: 10px;
+                }
+                
+            }
+
+        }
+    }
+}
+
+// TABLET
+@media only screen and (min-width: 601px) {
+}

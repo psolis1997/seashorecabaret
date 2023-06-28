@@ -1,0 +1,213 @@
+@import 'colors';
+@import 'fonts';
+
+// MOBILE
+body {
+
+    .logo {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
+        img {
+            width: 300px;
+        }
+    }
+
+    h1 {
+        @include header1;
+        text-align: center;
+    }
+
+    h4 {
+        @include header4;
+        text-align: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: auto;
+        background-color: $cream;
+        border: solid 2px $blue;
+        margin-bottom: 10px;
+        display: flex;
+
+        .card-header {
+            background-color: $cream;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            border-bottom: solid 2px $blue;
+        }
+
+        .nav-item {
+            width: 50%;
+            margin: 0;
+            padding: 0;
+
+            .nav-link {
+                margin: 0;
+                @include header4;
+                color: $black;
+            }
+
+            .nav-link.active {
+                background-color: $blue;
+                color: $cream;
+            }
+        }
+
+        .card-body {
+            padding: 10px;
+
+            .tab-content {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                .form-label {
+                    @include header5;
+                    margin-bottom: 0;
+                }
+
+                .form-control {
+                    margin-bottom: 5px;
+                    width: 225px;
+                }
+
+                .form-text {
+                    @include para;
+
+                    a {
+                        color: $blue;
+                    }
+                }
+
+                .btn {
+                    margin-top: 10px;
+                    border: solid 3px $gold;
+                    background-color: $red;
+                    color: $gold;
+                    border-radius: 10px;
+                    @include header5;
+                    text-decoration: none;
+                    color: $gold;
+                }
+            }
+        }
+    }
+
+    #guest {
+        text-decoration: none;
+        @include header4;
+        font-weight: 700;
+        color: $red;
+        width: 80%;
+        margin: auto;
+        border: solid 2px $blue;
+        border-radius: 10px;
+        background-color: $cream;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar {
+        background-color: $cream;
+        border-top: solid 2px $black;
+        padding: 0;
+
+        .container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0;
+
+            .nav-item {
+                width: 50%;
+
+                .nav-link {
+                    color: $black;
+                }
+
+                .btn-primary {
+                    background-color: $cream;
+                    color: $black;
+                    border: none;
+                    border-radius: 10px;
+                }
+
+                .btn-primary:focus {
+                    box-shadow: none;
+                }
+
+            }
+        }
+    }
+
+    .modal {
+        .modal-content {
+            background-color: $cream;
+
+            .modal-header {
+                @include header2;
+                width: 100%;
+                border-bottom: none;
+
+                .modal-title {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .btn-close {
+                    font-size: 15px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: right;
+                }
+            }
+
+            .modal-body {
+                @include header4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .modal-footer {
+                border-top: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .btn-primary {
+                    @include header5;
+                    color: $red;
+                    background-color: $cream;
+                    border: solid 2px $blue;
+                    margin: 0 15px 15px;
+                    border-radius: 10px;
+                }
+
+            }
+
+        }
+    }
+}
+
+// TABLET
+@media only screen and (min-width: 601px) {
+    body {
+        .card {
+            max-width: 450px;
+        }
+
+        .guest {
+            max-width: 450px;
+        }
+    }
+}
